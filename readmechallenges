@@ -1,0 +1,16 @@
+ Project Summary
+Disaster Tracker is a full-featured Single Page Application (SPA) built using React, TailwindCSS, and a combination of real-time public APIs to track and monitor global natural disasters. The project integrates two key data sources: NASA’s EONET API for tracking wildfires, storms, floods, and other natural events, and the USGS Earthquake API for up-to-date earthquake data across the globe.
+
+These APIs were selected for their real-time data availability, reliability, and comprehensive global coverage. They provide structured and frequently updated event data, making them ideal for educational, emergency, and monitoring applications. By combining both, users can get a holistic view of global disaster activity in one platform.
+
+Key features include Google Sign-In using Firebase Authentication, allowing users to securely log in and access personalized functionalities like saving favorite disasters. The app provides a Favorites page where users can revisit events they’re monitoring. It also includes advanced filtering (by disaster type, magnitude, date), search, and pagination to make navigation through hundreds of events fast and intuitive.
+
+A major highlight is the Statistics page, powered by Chart.js, where users can visually explore trends—such as the frequency of earthquakes or distribution of disaster types. This helps provide a deeper understanding of global disaster patterns.
+
+Offline support is enabled through localStorage caching, so users can still view previously loaded data even without an internet connection. The responsive design ensures a seamless experience across desktop, tablet, and mobile devices.
+
+Building this app came with several challenges. One of the most significant was merging and normalizing data from two different APIs with differing formats and schemas. Ensuring smooth client-side routing and authentication-based protected routes also required careful design. Moreover, implementing a robust state management pattern using React Context for auth and disaster data helped overcome prop-drilling and unnecessary re-renders.
+
+The project uses a clean and scalable folder structure (/components, /pages, /context, /services, etc.), allowing for maintainable code and future scalability. Features like retry logic for failed API calls, error states, and loading indicators were added to enhance the overall user experience.
+
+In conclusion, Disaster Tracker showcases the power of modern front-end development tools by combining real-time data, user authentication, dynamic filtering, and responsive design in a unified, educational, and potentially life-saving platform.
